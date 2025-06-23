@@ -11,12 +11,19 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        *::selection{
+            background-color: red;
+        }
+        body{
+            color: azure;
+        }
         .mat {
             top: 20px;
             align-content: center;
             margin-left: -15%;
         }
-        .card-wrapper{
+
+        .card-wrapper {
             display: inline;
         }
 
@@ -57,7 +64,7 @@
     </style>
 </head>
 
-<body>
+<body class="bg-dark">
     <nav class="navbar bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-white ms-3">Tech-Shop</a>
@@ -113,99 +120,21 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
-        <!-- <body class="bg-dark">
-            <div class="container">
-                <div class="card-container ">
-                    <div class="card-wrapper">
-                        <div class="card p-3 ps-5 bg-dark text-white" style="width: 15rem;">
-                            <p class="opacity-75 mb-5">JBL Endurance Run Sports</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/jbl-endu-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>999 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>1,599</del></p>
-                        </div>
-                        <div class="card p-3 ps-5 bg-dark text-white" style="width: 15rem;">
-                            <p class="opacity-75 mb-5">boAt Airdopes 203</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/boat203-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>1,074 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>3,999</del></p>
-                        </div>
-                        <div class="card p-3 ps-5 bg-dark text-white" style="width: 15rem;">
-                            <p class="opacity-75 mb-5">boAt Rockerz 518</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/boat518-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>1,299 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>3,990</del></p>
-                        </div>
-                        <div class="card p-3 ps-5 bg-dark text-white" style="width: 15rem;">
-                            <p class="opacity-75 mb-5">JBL Tune 760NC</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/jbl760nc-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>5,999 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>7,999</del></p>
-                        </div>
-                        <div class="card p-3 ps-5 bg-dark text-white" style="width: 15rem;">
-                            <p class="opacity-75 mb-5">boAt Rockerz 255</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/boat255r-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>899 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>2,990</del></p>
-                        </div>
-
-                    </div>
-                </div>
-            </div> -->
-            <div class="container">
-        <div class="carousel">
-            <div class="carousel-track">
-                <!-- Original 5 cards -->
-                <div class="carousel-item">
-                    <div class="card card-1">
-                        <div class="card-body">
-                          <p class="opacity-75 mb-5">JBL Endurance Run Sports</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/jbl-endu-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>999 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>1,599</del></p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card card-2">
-                        <div class="card-body">
-                           <p class="opacity-75 mb-5">JBL Endurance Run Sports</p>
-                            <img src="/images-20250620T093205Z-1-001/images/products/jbl-endu-1.png"
-                                class="card-img-top w-50 mb-4" alt="JBL Endurance Run Sports">
-                            <p><i class="fa-solid fa-indian-rupee-sign"></i>999 <del><i
-                                        class="fa-solid fa-indian-rupee-sign"></i>1,599</del></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card card-3">
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card card-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 4</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card card-5">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 5</h5>
-                        </div>
-                    </div>
-                </div>
+    
+    <h3 class="text-center mt-3">Featured Products</h3>
+    <h3 class="text-center mt-3">Top Products</h3>
+    <div class=" p-4 ps-5">
+        <ul class=" d-flex justify-content-around  ps-5 pe-5 list-unstyled ">
+            <li class=" item_div bg-danger ps-3 pe-3">All</li>
+            <li class="item_div">Headphones</li>
+            <li class="item_div">Earbuds</li>
+            <li class="item_div">Earphones</li>
+            <li class="item_div">Neckbands</li>
+        </ul>
+    </div>
 
 
 
@@ -214,11 +143,9 @@
 
 
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
