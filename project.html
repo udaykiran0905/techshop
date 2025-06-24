@@ -78,16 +78,23 @@
 </head>
 
 <body class="bg-dark">
-  <nav class="navbar bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white ms-3"><h3>Tech-Shop</h3></a>
-      <form class="d-flex" role="search">
-        <i class="fa-solid fa-magnifying-glass text-white me-5"></i>
-        <i class="fa-solid fa-cart-shopping text-white me-5"></i>
-        <i class="fa-solid fa-user text-white me-3"></i>
-      </form>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid ">
+      <a class="navbar-brand text-white ms-5" href="#"><h3>Tech-Shop</h3></a>
+      <div class="d-flex ms-auto">
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="search"
+          class="nav-link me-5 text-white"><i class="fas fa-search "></i></a>
+        <a href="/cart.html" target="_self" data-bs-toggle="tooltip" data-bs-placement="bottom" title="cart"
+          class="nav-link me-5 text-white"><i class="fa-solid fa-cart-shopping"></i>
+          <sup class="bg-danger badge rounded-circle">4</sup>
+        </a>
+        <a href="#" class="nav-link me-5 text-white"><i class="fas fa-user "></i> </a>
+      </div>
     </div>
   </nav>
+  <div id="cart-container">
+
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-slide="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -417,6 +424,12 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"></script>
+       <script>
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
 </body>
 
 </html>
