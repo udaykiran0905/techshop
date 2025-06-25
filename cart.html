@@ -11,8 +11,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body{
+            padding-top: 70px;
+        }
         *::selection {
-            color: red;
+            background-color: red;
         }
 
         .custom-scroll {
@@ -48,11 +51,14 @@
             left: 570px;
             top: 23px;
         }
+        .col-md-4 .form-control::placeholder{
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
     </style>
 </head>
 
 <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid ">
             <a class="navbar-brand text-white ms-5" href="#"><h3>Tech-Shop</h3></a>
             <div class="d-flex ms-auto">

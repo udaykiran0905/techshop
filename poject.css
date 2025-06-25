@@ -1,7 +1,9 @@
 *::selection {
     background-color: red;
 }
-
+body{
+    padding-top: 70px;
+}
 * {
     color: azure;
 }
@@ -86,3 +88,6 @@
 .card-wrapper {
    display: flex;
  }
+.col-md-4 .form-control::placeholder{
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
