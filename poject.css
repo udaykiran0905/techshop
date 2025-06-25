@@ -61,8 +61,11 @@ body {
     }
 }
 
-.item_div:hover {
+.list_item:hover {
     background-color: red;
+}
+.list_item{
+    font-size: 25px;
 }
 
 .user-form {
