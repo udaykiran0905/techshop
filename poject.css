@@ -1,9 +1,11 @@
 *::selection {
     background-color: red;
 }
-body{
+
+body {
     padding-top: 70px;
 }
+
 * {
     color: azure;
 }
@@ -67,27 +69,33 @@ body{
     right: 60px;
     top: 50px;
 }
+
 .user-dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .dropdown-menu {
-      width:300px;
-      position: absolute;
-      right:-15px;
-      top:25px;
-  }
-  .modal-body .form-control::placeholder{
+    display: block;
+}
+
+.dropdown-menu {
+    width: 300px;
+    position: absolute;
+    right: -15px;
+    top: 25px;
+}
+
+.modal-body .form-control::placeholder {
     color: rgba(255, 255, 255, 0.5) !important;
-  }
-  .card-container {
-      display: flex;
-      overflow: hidden;
-      width: 100%;
-      position: relative;
-    }
+}
+
+.card-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.col-md-4 .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .card-wrapper {
-   display: flex;
- }
-.col-md-4 .form-control::placeholder{
-    color: rgba(255, 255, 255, 0.5) !important;
-  }
+    display: flex;
+}
